@@ -1,0 +1,7 @@
+{
+  "name": "ressources_relationnelles_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
