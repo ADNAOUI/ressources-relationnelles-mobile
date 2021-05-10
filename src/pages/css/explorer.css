@@ -1,0 +1,11 @@
+.boutonExplorer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.boutonExplorer > a{
+    width: 45%;
+}
+.boutonExplorer > a > ion-button {
+    width: 100%;
+}
