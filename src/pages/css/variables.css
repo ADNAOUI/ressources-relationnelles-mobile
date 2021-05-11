@@ -14,7 +14,7 @@ http://ionicframework.com/docs/theming/ */
 .categoryMarginSection{
   margin-top: 60px;
 }
-.categoryMarginSection > ion-header >  .positionEnfantToolbarCategory{
+.positionEnfantToolbarCategory{
   height: 30px;
 }
 .categoryMarginSection > ion-header > ion-toolbar{
