@@ -13,7 +13,7 @@ class Tendances extends React.Component {
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">
-              <IonButton routerLink="/acceuil"><IonIcon icon={chevronBack}></IonIcon></IonButton>
+              <IonButton routerLink="/accueil"><IonIcon icon={chevronBack}></IonIcon></IonButton>
               <IonTitle>Tendances</IonTitle>
             </IonButtons>
           </IonToolbar>
