@@ -6,6 +6,10 @@ import './css/modalAccount.css'
 
 
 class ModalAccount extends React.Component {
+    state = {
+        indexTabsConnect : 1 
+    };
+   
 
     headerRef: RefObject<HTMLIonHeaderElement> = React.createRef();
 
@@ -15,6 +19,8 @@ class ModalAccount extends React.Component {
     }
 
     await (this.headerRef.current.closest('ion-modal') as HTMLIonModalElement).dismiss();}
+
+    
 
     render() {
         return (
@@ -32,14 +38,13 @@ class ModalAccount extends React.Component {
 
                     <ul className="positionParentListNavigationModal">
                         <li>
-                            <IonText> S'inscrire</IonText>
+                            <IonText onClick={() => this.setState({indexTabsConnect : 1 })}> S'inscrire</IonText>
                         </li>
                         <li>
-                            <IonText> Se Connecter</IonText>
+                            <IonText onClick={() => this.setState({indexTabsConnect : 2 })}> Se Connecter</IonText>
                         </li>
                     </ul>
-
-                    <form className="inscriptionModalForm">
+                    <form className={ this.state.indexTabsConnect === 1 ? "inscriptionModalForm" : "inscriptionModalForm invisible"}>
                         <IonItem>
                             <IonLabel position="floating">Pseudonyme</IonLabel>
                             <IonInput />
@@ -85,7 +90,28 @@ class ModalAccount extends React.Component {
                         <IonButton color="secondary" className="ion-margin-top" type="submit" expand="block">S'inscrire</IonButton>
                     </form>
 
+                    <form className={ this.state.indexTabsConnect === 2 ? "connexionModalForm" : "connexionModalForm invisible"}>
+                        <IonItem>
+                            <IonLabel position="floating">Identifiant</IonLabel>
+                            <IonInput />
+                        </IonItem>
+
+                        <IonItem>
+                            <IonLabel position="floating">Mot de passe</IonLabel>
+                            <IonInput type="password" />
+                        </IonItem>
+
+                        <IonText className="textPasswordForgotten">
+                             <p>
+                                Mot de passe oublié ?
+                            </p>
+                        </IonText>    
+                           
+                        <IonButton color="primary" className="ion-margin-top" type="submit" expand="block"><span className="textButtonConnect" >Se Connecter</span></IonButton>
+                    </form>
                 </IonContent>
+
+               
             </IonPage>   
       );
     }; 

@@ -42,3 +42,19 @@ ion-content > .InscriptionModalText{
     text-align: center;
     margin: 20px;
 }
+.invisible{
+    display: none;
+}
+.connexionModalForm{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+}
+.connexionModalForm > ion-item{
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #705a62;
+}
+.connexionModalForm > .textPasswordForgotten {
+    color : #E04980 ;
+}
