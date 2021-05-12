@@ -111,7 +111,7 @@ class ModalAccount extends React.Component {
                     </form>
                 </IonContent>
 
-                </IonContent>
+               
             </IonPage>   
       );
     }; 
