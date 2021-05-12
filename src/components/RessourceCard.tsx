@@ -1,17 +1,13 @@
 import React from 'react';
-import { IonToolbar, IonTitle, IonLabel, IonIcon, IonFooter, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
 import { heart, chatbubblesOutline } from 'ionicons/icons';
 
 //CSS
 import './css/ressourceCard.css'
 
-//Images 
-import Image from '../img/hackaton.png'
-
 const RessourceCard: React.FC = () => {
   return (
     <IonCard className="formatCard">
-
       <IonCardHeader>
         <IonCardSubtitle className="colorBlue positionAvatarHome">
           <IonAvatar>
@@ -23,7 +19,7 @@ const RessourceCard: React.FC = () => {
       </IonCardHeader>
 
       <IonCardContent id="ressourceCardId">
-        <IonImg className="" src={Image} />
+        <IonImg className="" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_15.jpg"/>
         <IonText color="white">
           "Dans la vie, j'avais deux ennemis : le vocabulaire et les épinards."
           </IonText>

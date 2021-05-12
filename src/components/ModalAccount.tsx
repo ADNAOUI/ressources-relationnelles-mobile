@@ -1,9 +1,8 @@
-import React, {RefObject, useState} from 'react';
+import React, {RefObject} from 'react';
 import { IonText, IonItem, IonInput, IonLabel, IonHeader, IonToolbar, IonTitle, IonIcon, IonButtons, IonButton, IonContent, IonPage } from '@ionic/react';
 
 /*CSS*/
 import './css/modalAccount.css'
-
 
 
 class ModalAccount extends React.Component {
@@ -19,8 +18,7 @@ class ModalAccount extends React.Component {
 
     render() {
         return (
-            <IonPage color="secondary">
-                    
+            <IonPage color="secondary">    
                 <section ref={this.headerRef} >
                     <IonButtons className="positionCloseCrossModalInscription" slot="end">
                         <IonButton onClick={() => this.closeModal()}>
@@ -40,6 +38,7 @@ class ModalAccount extends React.Component {
                             <IonText> Se Connecter</IonText>
                         </li>
                     </ul>
+
                     <form className="inscriptionModalForm">
                         <IonItem>
                             <IonLabel position="floating">Pseudonyme</IonLabel>
@@ -60,7 +59,6 @@ class ModalAccount extends React.Component {
                             <IonLabel position="floating">Date de naissance</IonLabel>
                             <IonInput type="date" />
                         </IonItem>
-
 
                         <IonItem>
                             <IonLabel position="floating">Adresse mail</IonLabel>
@@ -86,8 +84,8 @@ class ModalAccount extends React.Component {
                            
                         <IonButton color="secondary" className="ion-margin-top" type="submit" expand="block">S'inscrire</IonButton>
                     </form>
-                </IonContent>
 
+                </IonContent>
             </IonPage>   
       );
     }; 

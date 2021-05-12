@@ -1,5 +1,5 @@
-import React from 'react';
-import { IonAvatar, IonContent, IonCard,  IonCardSubtitle, IonPage, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import React, { useState, useEffect } from 'react';
+import { useIonViewWillEnter, IonInfiniteScroll, IonContent, IonInfiniteScrollContent, IonPage } from '@ionic/react';
 
 //Vue 
 import Card from '../components/RessourceCard';
@@ -9,13 +9,16 @@ import './css/home.css';
 
 
 const Home: React.FC = () => {
+
   return (
     <IonPage>
       <IonContent>
         <section className="marginSection">
-          <Card/>
-          <Card/>
-          <Card/>
+          {
+            Array(100).fill(null).map((_, i) => (
+              <Card key={i} />
+            ))
+          }
         </section>
       </IonContent>
     </IonPage>
