@@ -1,6 +1,9 @@
 .sc-ion-modal-md-h:first-of-type{
     background: #001922;
 }
+html.ios ion-modal .ion-page{
+    background: #001922;
+}
 ion-content > .InscriptionModalText{
     font-size: 20px;
     font-weight: bold;

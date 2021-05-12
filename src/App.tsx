@@ -55,6 +55,12 @@ import Jeuxsoi from './components/childViewCategory/soi/Jeux';
 import Videossoi from './components/childViewCategory/soi/Videos';
 import VueEnsemblesoi from './components/childViewCategory/soi/VueEnsemble';
 
+import NouveautesTendances from './components/childViewTendances/nouveautes';
+import MoreLikedTendances from './components/childViewTendances/moreliked';
+import GamesTendances from './components/childViewTendances/games';
+import VideosTendances from './components/childViewTendances/videos';
+import ArticlesTendances from './components/childViewTendances/articles';
+
 /* CSS */
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
@@ -146,6 +152,13 @@ export const App: React.FC = () => {
             <Route path="/category/soi/jeux" component={Jeuxsoi} />
             <Route path="/category/soi/videos" component={Videossoi} />
             <Route path="/category/soi/about" component={Aboutsoi} />
+
+             {/* Route pour la Page Tendances */}
+            <Route path="/tendances/nouveautes" component={NouveautesTendances} />
+            <Route path="/tendances/moreliked" component={MoreLikedTendances} />
+            <Route path="/tendances/games" component={GamesTendances} />
+            <Route path="/tendances/videos" component={VideosTendances} />
+            <Route path="/tendances/articles" component={ArticlesTendances} />
           </IonRouterOutlet>
 
           <IonTabBar slot="bottom">
@@ -164,7 +177,7 @@ export const App: React.FC = () => {
               <IonLabel></IonLabel>
             </IonTabButton>
 
-            <IonTabButton tab="tendances" href="/tendances">
+            <IonTabButton tab="tendances" href="/tendances/nouveautes">
               <IonIcon icon={flame} />
               <IonLabel>Tendances</IonLabel>
             </IonTabButton>

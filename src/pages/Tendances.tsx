@@ -1,54 +1,47 @@
-import React, { useState } from 'react';
-import { IonProgressBar, IonLoading, IonButton, IonContent, IonSpinner, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import React from 'react';
+import { IonButton, IonTitle, IonHeader, IonToolbar, IonButtons, IonIcon } from '@ionic/react';
+import { Link } from 'react-router-dom';
+import { chevronBack } from 'ionicons/icons';
 import './css/tendances.css';
 
-export const Tendances: React.FC = () => {
-  const [showLoading, setShowLoading] = useState(true);
+class Tendances extends React.Component {
 
-  setTimeout(() => {
-    setShowLoading(false);
-  }, 1000);
 
-  return (
-    <IonPage>
-      <IonContent>
-        <section className="marginSection">
-          <IonProgressBar></IonProgressBar>
-          <IonButton onClick={() => setShowLoading(true)}>Activer</IonButton>
-          <IonLoading
-          cssClass='my-custom-class'
-          isOpen={showLoading}
-          onDidDismiss={() => setShowLoading(false)}
-          message={'Please wait...'}
-          />
-              {/*-- Default Spinner --*/}
-              <IonSpinner />
+  render() {
+    return (
+      <section className="categoryMarginSection">
+        <IonHeader>
+          <IonToolbar>
+            <IonButtons slot="start">
+              <IonButton routerLink="/accueil"><IonIcon icon={chevronBack}></IonIcon></IonButton>
+              <IonTitle>Tendances</IonTitle>
+            </IonButtons>
+          </IonToolbar>
+          <IonToolbar className="positionEnfantToolbarCategory">
+            <ul className="positionParentListNavigationCategory">
+              <Link to="/tendances/nouveautes">
+                <li>Nouveautés</li>
+              </Link>
+              <Link to="/tendances/moreliked">
+                <li>Les plus likés</li>
+              </Link>
+              <Link to="/tendances/games">
+                <li>Jeux</li>
+              </Link>
+              <Link to="/tendances/videos">
+                <li>Vidéos</li>
+              </Link>
+              <Link to="/tendances/articles">
+                <li>Articles</li>
+              </Link>
+            </ul>
+          </IonToolbar>
+        </IonHeader>
+      </section>
+    );
+  };
 
-              {/*-- Lines --*/}
-              <IonSpinner name="lines" />
+}
 
-              {/*-- Lines Small --*/}
-              <IonSpinner name="lines-small" />
-
-              {/*-- Dots --*/}
-              <IonSpinner name="dots" />
-
-              {/*-- Bubbles --*/}
-              <IonSpinner name="bubbles" />
-
-              {/*-- Circles --*/}
-              <IonSpinner name="circles" />
-
-              {/*-- Crescent --*/}
-              <IonSpinner name="crescent" />
-
-              {/*-- Paused Default Spinner --*/}
-              <IonSpinner paused />
-          </section>
-      </IonContent>
-
-    </IonPage>
-  );
-};
 
 export default Tendances;
