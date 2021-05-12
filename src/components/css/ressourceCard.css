@@ -1,6 +1,6 @@
-/*
-Ressources Card
-*/
+/******************************************************
+                Ressources Card
+********************************************************/
 #ressourceCardId > ion-text{
     display: block;
     text-align: justify;
@@ -65,8 +65,8 @@ Ressources Card
 --ion-color-white-contrast-rgb: 0,0,0;
 --ion-color-white-shade: #e0e0e0;
 --ion-color-white-tint: #ffffff;
-
 }
+
 .ion-color-pinkofficial {
     --ion-color-base: var(--ion-color-pinkofficial);
     --ion-color-base-rgb: var(--ion-color-pinkofficial-rgb);
