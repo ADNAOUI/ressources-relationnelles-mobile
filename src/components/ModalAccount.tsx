@@ -1,5 +1,5 @@
 import React, {RefObject} from 'react';
-import { IonText, IonItem, IonInput, IonLabel, IonHeader, IonToolbar, IonTitle, IonIcon, IonButtons, IonButton, IonContent, IonPage } from '@ionic/react';
+import { IonText, IonItem, IonInput, IonLabel, IonIcon, IonButtons, IonButton, IonContent, IonPage } from '@ionic/react';
 
 /*CSS*/
 import './css/modalAccount.css'
@@ -10,7 +10,6 @@ class ModalAccount extends React.Component {
         indexTabsConnect : 1 
     };
    
-
     headerRef: RefObject<HTMLIonHeaderElement> = React.createRef();
 
     async closeModal() {
@@ -21,7 +20,6 @@ class ModalAccount extends React.Component {
     await (this.headerRef.current.closest('ion-modal') as HTMLIonModalElement).dismiss();}
 
     
-
     render() {
         return (
             <IonPage color="secondary">    
@@ -44,7 +42,7 @@ class ModalAccount extends React.Component {
                             <IonText onClick={() => this.setState({indexTabsConnect : 2 })}> Se Connecter</IonText>
                         </li>
                     </ul>
-                    <form className={ this.state.indexTabsConnect === 1 ? "inscriptionModalForm" : "inscriptionModalForm invisible"}>
+                    <form className={this.state.indexTabsConnect === 1 ? "inscriptionModalForm" : "inscriptionModalForm invisible"}>
                         <IonItem>
                             <IonLabel position="floating">Pseudonyme</IonLabel>
                             <IonInput />
@@ -90,7 +88,7 @@ class ModalAccount extends React.Component {
                         <IonButton color="secondary" className="ion-margin-top" type="submit" expand="block">S'inscrire</IonButton>
                     </form>
 
-                    <form className={ this.state.indexTabsConnect === 2 ? "connexionModalForm" : "connexionModalForm invisible"}>
+                    <form className={this.state.indexTabsConnect === 2 ? "connexionModalForm" : "connexionModalForm invisible"}>
                         <IonItem>
                             <IonLabel position="floating">Identifiant</IonLabel>
                             <IonInput />
@@ -102,16 +100,14 @@ class ModalAccount extends React.Component {
                         </IonItem>
 
                         <IonText className="textPasswordForgotten">
-                             <p>
-                                Mot de passe oublié ?
-                            </p>
+                             <p>Mot de passe oublié ?</p>
                         </IonText>    
                            
-                        <IonButton color="primary" className="ion-margin-top" type="submit" expand="block"><span className="textButtonConnect" >Se Connecter</span></IonButton>
+                        <IonButton color="sully" className="ion-margin-top" type="submit" expand="block">
+                            <span className="textButtonConnect">Se Connecter</span>
+                        </IonButton>
                     </form>
                 </IonContent>
-
-               
             </IonPage>   
       );
     }; 
