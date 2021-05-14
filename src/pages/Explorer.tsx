@@ -1,6 +1,8 @@
 import React from 'react';
-import { IonButton, IonContent, IonPage} from '@ionic/react';
 import { Link } from 'react-router-dom';
+import { IonButton, IonContent, IonIcon, IonLabel, IonPage, IonText} from '@ionic/react';
+import { manOutline, briefcaseOutline, peopleOutline, heartHalfOutline, wineOutline} from 'ionicons/icons';
+
 
 import './css/explorer.css';
 
@@ -11,19 +13,44 @@ export const Explorer: React.FC = () => {
         <section className="marginSection">
           <div className="boutonExplorer">
             <Link to="/category/soi/vueEnsemble">
-              <IonButton color="danger">Soi</IonButton>
-              </Link>
+              <IonButton color="danger">
+                <IonText>
+                  <IonIcon icon={manOutline}/>
+                  <IonLabel>Soi</IonLabel>
+                </IonText>
+              </IonButton>
+            </Link>
             <Link to="/category/conjoints/vueEnsemble">
-            <IonButton color="tertiary">Conjoints</IonButton>
+              <IonButton color="tertiary">
+                <IonText>
+                  <IonIcon icon={heartHalfOutline}/>
+                  <IonLabel>Conjoints</IonLabel>
+                </IonText>
+              </IonButton>
             </Link>
             <Link to="/category/professionnels/vueEnsemble">
-              <IonButton color="success">Professionnelles</IonButton>
+              <IonButton color="success">
+                <IonText>
+                  <IonIcon icon={briefcaseOutline}/>
+                  <IonLabel>Job</IonLabel>
+                </IonText>
+              </IonButton>
             </Link>
             <Link to="/category/familles/vueEnsemble">
-              <IonButton color="primary">Famille</IonButton>
+              <IonButton color="primary"> 
+                  <IonText>
+                  <IonIcon icon={peopleOutline}/>
+                  <IonLabel>Famille</IonLabel>
+                </IonText>
+              </IonButton>
             </Link>
             <Link to="/category/amis/vueEnsemble">
-              <IonButton color="warning">Amis</IonButton>
+              <IonButton color="warning">
+              <IonText>
+                  <IonIcon icon={wineOutline}/>
+                  <IonLabel>Amis</IonLabel>
+                </IonText>
+              </IonButton>
             </Link>
           </div>
         </section> 
