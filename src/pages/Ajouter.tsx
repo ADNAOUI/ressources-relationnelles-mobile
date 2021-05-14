@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { IonHeader, IonToolbar, IonTitle, IonPage, IonModal, IonButton, IonContent } from '@ionic/react';
-import ModalAccount from '../components/ModalAccount';
+import { IonPage, IonModal, IonButton, IonContent } from '@ionic/react';
 
 
 
