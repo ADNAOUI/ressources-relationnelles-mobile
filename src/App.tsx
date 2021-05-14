@@ -8,7 +8,7 @@ import {
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
-  IonTabs, IonHeader, IonToolbar, IonButton, IonSearchbar, IonThumbnail, IonImg, IonModal
+  IonTabs, IonHeader, IonToolbar, IonSearchbar, IonThumbnail, IonImg, IonModal
 } from '@ionic/react';
 import { homeOutline, personCircleOutline, flame, addCircleOutline, compass} from 'ionicons/icons';
 
@@ -61,6 +61,10 @@ import GamesTendances from './components/childViewTendances/games';
 import VideosTendances from './components/childViewTendances/videos';
 import ArticlesTendances from './components/childViewTendances/articles';
 
+import Texte from './pages/view/viewRessources/VueRessourceTexte';
+import Article from './pages/view/viewRessources/VueRessourceArticle';
+import Video from './pages/view/viewRessources/VueRessourceVideo';
+
 /* CSS */
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
@@ -72,10 +76,8 @@ import './pages/css/variables.css';
 import Logo from './img/Logo_REsources_RElationnellesResponsive.png';
 import ModalAccount from './components/ModalAccount';
 
-
 export const App: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-  
   async function closeModal() {
     await setShowModal(false);
   }
@@ -153,12 +155,17 @@ export const App: React.FC = () => {
             <Route path="/category/soi/videos" component={Videossoi} />
             <Route path="/category/soi/about" component={Aboutsoi} />
 
-             {/* Route pour la Page Tendances */}
+            {/* Route pour la Page Tendances */}
             <Route path="/tendances/nouveautes" component={NouveautesTendances} />
             <Route path="/tendances/moreliked" component={MoreLikedTendances} />
             <Route path="/tendances/games" component={GamesTendances} />
             <Route path="/tendances/videos" component={VideosTendances} />
             <Route path="/tendances/articles" component={ArticlesTendances} />
+             
+            {/* Route pour la Page afficher une Ressource */}
+            <Route path="/vue/ressource/texte" component={Texte} />
+            <Route path="/vue/ressource/article" component={Article} />
+            <Route path="/vue/ressource/video" component={Video} />
           </IonRouterOutlet>
 
           <IonTabBar className="positionTabs" slot="bottom">

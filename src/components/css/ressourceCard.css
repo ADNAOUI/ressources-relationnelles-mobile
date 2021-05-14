@@ -13,6 +13,9 @@
     background: #565656;
     border-radius: 10px;
 }
+a {
+    text-decoration: none;
+}
 .colorBlue{
     color: #2699FB;
 }
@@ -25,7 +28,10 @@
     color: #E04980;
 }
 .positionTextTitleCard{
-    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 }
 .spanNameCard{
     margin: 10px;
@@ -50,6 +56,73 @@
     transform: translateY(-50%);
 }
 
+.ressourceMarginSection{
+    margin-top: 30px;
+}
+
+/******************************************************
+                VueTopRessources
+********************************************************/
+#vueTopRessourceParentText > ion-item:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#vueTopRessourceParentText > ion-item:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#vueTopRessourceParentText > ion-item:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: -30px;
+}
+#vueTopRessourceParentText > ion-item:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#vueTopRessourceParentText > ion-item:nth-child(5){
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.titlePositionVueRessource{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+}
+#textParentVueRessourceArticle > p {
+    margin: 15px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+
+/******************************************************
+                VueBotRessources
+********************************************************/
+.positionParentElementRessourcesBot{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+}
+.positionParentElementRessourcesBot > li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+}
+.positionParentElementRessourcesBot > li > ion-label {
+    margin-left: 5px;
+}
+.ressourceMarginSectionBot{
+    margin-top: 25px;
+}
 
 :root {
 --ion-color-pinkofficial: #e0497b;
