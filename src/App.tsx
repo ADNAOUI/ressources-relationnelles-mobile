@@ -70,7 +70,6 @@ import ApercuRessource from './pages/view/viewProfils/VueRessourceProfil';
 import ApercuRessourceFav from './pages/view/viewProfils/VueFavoriRessourceProfil';
 import GallerieProfil from './pages/view/viewProfils/VueGallerieProfil';
 
-
 /* CSS */
 import '@ionic/react/css/core.css';
 
