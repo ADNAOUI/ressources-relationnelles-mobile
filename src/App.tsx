@@ -15,7 +15,7 @@ import { homeOutline, personCircleOutline, flame, addCircleOutline, compass} fro
 //Vue
 import Home from './pages/Home';
 import Tendances from './pages/Tendances';
-import Bibliotheque from './pages/Bibliotheque';
+import Profil from './pages/Profil';
 import Ajouter from './pages/Ajouter';
 import Explorer from './pages/Explorer';
 
@@ -65,8 +65,18 @@ import Texte from './pages/view/viewRessources/VueRessourceTexte';
 import Article from './pages/view/viewRessources/VueRessourceArticle';
 import Video from './pages/view/viewRessources/VueRessourceVideo';
 
+import AboutProfil from './pages/view/viewProfils/VueAboutProfil';
+import ApercuRessource from './pages/view/viewProfils/VueRessourceProfil';
+import ApercuRessourceFav from './pages/view/viewProfils/VueFavoriRessourceProfil';
+import GallerieProfil from './pages/view/viewProfils/VueGallerieProfil';
+
+
 /* CSS */
 import '@ionic/react/css/core.css';
+
+import '@mobiscroll/react/dist/css/mobiscroll.min.css';
+
+
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';
@@ -109,7 +119,7 @@ export const App: React.FC = () => {
             <Route path="/explore" component={Explorer} />
             <Route path="/ajouter" component={Ajouter} />
             <Route path="/tendances" component={Tendances} />
-            <Route path="/monCompte" component={Bibliotheque} />
+            <Route path="/profil" component={Profil} />
 
             {/* Route pour la Page Explorer */}
             <Route path="/category/amis" component={Amis} />
@@ -165,6 +175,13 @@ export const App: React.FC = () => {
             <Route path="/vue/ressource/texte" component={Texte} />
             <Route path="/vue/ressource/article" component={Article} />
             <Route path="/vue/ressource/video" component={Video} />
+
+            {/* Route pour la Page afficher les vues du Profil */}
+            <Route path="/view/aboutProfil" component={AboutProfil} />
+            <Route path="/view/apercuRessourceProfil" component={ApercuRessource} />
+            <Route path="/view/apercuRessourceFavProfil" component={ApercuRessourceFav} />
+            <Route path="/view/GallerieProfil" component={GallerieProfil} />
+
           </IonRouterOutlet>
 
           <IonTabBar className="positionTabs" slot="bottom">
@@ -183,12 +200,12 @@ export const App: React.FC = () => {
               <IonLabel></IonLabel>
             </IonTabButton>
 
-            <IonTabButton className="widthTabParent" tab="tendances" href="/tendances/nouveautes">
+            <IonTabButton className="widthTabParent" tab="trends" href="/tendances/nouveautes">
               <IonIcon icon={flame} />
               <IonLabel>Trends</IonLabel>
             </IonTabButton>
 
-            <IonTabButton className="widthTabParent" tab="monCompte" href="/monCompte">
+            <IonTabButton className="widthTabParent" tab="profil" href="/profil">
               <IonIcon icon={personCircleOutline} />
               <IonLabel>Profil</IonLabel>
             </IonTabButton>

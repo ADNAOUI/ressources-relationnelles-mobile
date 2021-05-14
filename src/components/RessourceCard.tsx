@@ -49,14 +49,6 @@ const RessourceCard: React.FC = () => {
           <IonLabel>120</IonLabel>
         </IonTitle>
       </IonText>
-
-      <IonRouterOutlet>
-        <Route path="/vue/2" component={Articles} />
-        <Route path="/vue/3" component={Video} />
-        {/* <Route path="/explore" component={Explorer} /> */}
-        {/* <Route path="/ajouter" component={Ajouter} /> */}
-        {/* <Route path="/tendances" component={Tendances} /> */}
-      </IonRouterOutlet>
     </IonCard>
   );
 };
