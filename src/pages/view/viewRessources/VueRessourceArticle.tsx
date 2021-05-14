@@ -14,7 +14,7 @@ export const VueRessourceArticle: React.FC = () => {
             <IonTitle className="titlePositionVueRessource">Titre</IonTitle>
           </IonText>
           <IonCardContent id="ressourceCardId">
-            <IonItem>
+            <IonItem lines="none">
               <IonImg className="" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_15.jpg" />
             </IonItem>
             <IonText color="white">
