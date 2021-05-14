@@ -94,3 +94,23 @@ ion-content > .InscriptionModalText{
     transform: translateY(-85%);  
 }
 
+/***************************************************
+                    COULEUR
+***************************************************/
+:root {
+    --ion-color-sully: #004158;
+    --ion-color-sully-rgb: 0,65,88;
+    --ion-color-sully-contrast: #3FCCFF;
+    --ion-color-sully-contrast-rgb: 255,255,255;
+    --ion-color-sully-shade: #00394d;
+    --ion-color-sully-tint: #1a5469;
+}
+
+.ion-color-sully {
+    --ion-color-base: var(--ion-color-sully);
+    --ion-color-base-rgb: var(--ion-color-sully-rgb);
+    --ion-color-contrast: var(--ion-color-sully-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-sully-contrast-rgb);
+    --ion-color-shade: var(--ion-color-sully-shade);
+    --ion-color-tint: var(--ion-color-sully-tint);
+}

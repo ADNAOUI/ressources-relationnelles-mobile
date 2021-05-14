@@ -67,6 +67,9 @@ import Video from './pages/view/viewRessources/VueRessourceVideo';
 
 /* CSS */
 import '@ionic/react/css/core.css';
+import '@mobiscroll/react/dist/css/mobiscroll.min.css';
+
+
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';

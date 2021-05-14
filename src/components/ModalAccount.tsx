@@ -38,7 +38,7 @@ class ModalAccount extends React.Component {
                     <p className={ this.state.indexTabsConnect === 1 ? "inscriptionModalText" : "inscriptionModalText invisible"}>S'inscrire à Ressources Relationnelles</p>
                     <p className={ this.state.indexTabsConnect === 2 ? "inscriptionModalText" : "inscriptionModalText invisible"}>Se connecter à Ressources Relationnelles</p>
                     <p className={ this.state.indexTabsConnect === 3 ? "inscriptionModalText" : "inscriptionModalText invisible"}>Retrouvez votre compte Ressources Relationnelles</p>
-                    <p className={ this.state.indexTabsConnect === 4 ? "inscriptionModalText" : "inscriptionModalText invisible"}>Bienvenue sur Ressources Relationnelles, John Doe</p>
+                   
                     
                     
                     
@@ -122,7 +122,7 @@ class ModalAccount extends React.Component {
                             </p>
                         </IonText>    
                            
-                        <IonButton color="primary" className="ion-margin-top" type="submit" expand="block">Se Connecter</IonButton>
+                        <IonButton color="sully" className="ion-margin-top" type="submit" expand="block">Se Connecter</IonButton>
                     </form>
 
                     <form className={ this.state.indexTabsConnect === 3 ? "passwordForgottenModalForm" : "passwordForgottenModalForm invisible"}>
@@ -138,7 +138,7 @@ class ModalAccount extends React.Component {
                             </p>
                         </IonText> 
 
-                        <IonButton color="primary" className="ion-margin-top" type="submit" expand="block">Envoyer le lien </IonButton>
+                        <IonButton color="sully" className="ion-margin-top" type="submit" expand="block">Envoyer le lien </IonButton>
                         <IonButton color="secondary" className="ion-margin-top ButtonBackModalPasswordForgotten" type="submit" expand="block">Retour</IonButton>
                     </form>
 
@@ -146,7 +146,9 @@ class ModalAccount extends React.Component {
                         <div className="childForm">
                         <IonImg src={Logo} className="imgModalWelcome" />
 
-                        <IonButton color="primary" className="ion-margin-top" type="submit" expand="block">Choisir un type de relation</IonButton>
+                        <p className="inscriptionModalText">Bienvenue sur Ressources Relationnelles, John Doe</p>
+
+                        <IonButton color="sully" className="ion-margin-top" type="submit" expand="block">Choisir un type de relation</IonButton>
                         </div>
                         
                     </form>
