@@ -9,8 +9,10 @@ export const Ajouter: React.FC = () => {
 
 
   return (
+
+
     <IonPage>
-    <IonContent>
+    <IonContent> 
         <section className="categoryMarginSection">
       <IonModal isOpen={showModal}>
         <IonButton onClick={() => setShowModal(false)}>
