@@ -4,6 +4,13 @@ http://ionicframework.com/docs/theming/ */
 :host{
   min-height: 30px;
 }
+.positionTabs{
+  display: flex;
+  flex-direction: row;
+}
+.widthTabParent{
+  width: 20%;
+}
 .sizeButtonAddRessources{
   font-size: 50px;
   color: #E04980;
