@@ -103,7 +103,6 @@ export const App: React.FC = () => {
 
       <IonReactRouter>
         <IonTabs>
-
           <IonRouterOutlet>
             <Route path="/" render={() => <Redirect to="/accueil" />} exact={true} />
             <Route path="/accueil" component={Home} />
