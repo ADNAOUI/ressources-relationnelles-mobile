@@ -17,13 +17,13 @@ const RessourceCard: React.FC = () => {
             <img src="http://pm1.narvii.com/7158/c170e801266e77cea52ac68934ba6596647a7795r1-604-443v2_uhq.jpg" />
           </IonAvatar>
           <Link to="/vue/ressource/texte">
-            <IonItem>
+            <IonItem lines="none">
               <span className="spanNameCard">Farid Noxus</span>
             </IonItem>
           </Link>
         </IonCardSubtitle>
         <Link to="/vue/ressource/article">
-          <IonItem>
+          <IonItem lines="none">
             <IonCardTitle className="colorPink positionTextTitleCard">Titre</IonCardTitle>
           </IonItem>
         </Link>
@@ -31,7 +31,7 @@ const RessourceCard: React.FC = () => {
 
       <IonCardContent id="ressourceCardId">
         <Link to="/vue/ressource/video">
-          <IonItem>
+          <IonItem lines="none">
             <IonImg className="" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_15.jpg" />
           </IonItem>
         </Link>
