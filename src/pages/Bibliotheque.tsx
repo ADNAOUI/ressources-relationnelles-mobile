@@ -2,13 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {
   IonInfiniteScroll,
   IonInfiniteScrollContent,
-  useIonViewWillEnter,
   IonContent,
-  IonFooter,
-  IonHeader,
   IonPage,
-  IonTitle,
-  IonToolbar,
   IonCard,
   IonButton,
   IonLabel

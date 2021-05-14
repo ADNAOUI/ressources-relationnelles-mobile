@@ -4,6 +4,13 @@ http://ionicframework.com/docs/theming/ */
 :host{
   min-height: 30px;
 }
+.positionTabs{
+  display: flex;
+  flex-direction: row;
+}
+.widthTabParent{
+  width: 20%;
+}
 .sizeButtonAddRessources{
   font-size: 50px;
   color: #E04980;
@@ -164,17 +171,10 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-farid-contrast-rgb: 0, 0, 0;
     --ion-color-farid-shade: #49e076;
     --ion-color-farid-tint: #49e076;
-
-    --ion-color-sully: #004158;
-    --ion-color-sully-rgb: 82, 255, 252;
-    --ion-color-sully-contrast: #49e076;
-    --ion-color-sully-contrast-rgb: 0, 0, 0;
-    --ion-color-sully-shade: #49e076;
-    --ion-color-sully-tint: #49e076;
     
-    --ion-color-primary: #004158;
+    --ion-color-primary: #00B0F0;
     --ion-color-primary-rgb: 82, 255, 252;
-    --ion-color-primary-contrast: #3FCCFF;
+    --ion-color-primary-contrast: #000000;
     --ion-color-primary-contrast-rgb: 0, 0, 0;
     --ion-color-primary-shade: #48e0de;
     --ion-color-primary-tint: #63fffc;
@@ -288,7 +288,7 @@ http://ionicframework.com/docs/theming/ */
     --ion-text-color: #ffffff;
     --ion-text-color-rgb: 255,255,255;
 
-    --ion-border-color: #222222;
+    --ion-border-color: transparent;
 
     --ion-color-step-50: #1e1e1e;
     --ion-color-step-100: #2a2a2a;

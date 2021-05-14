@@ -1,6 +1,9 @@
 import React from 'react';
-import { IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonItem, IonRouterOutlet, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
 import { heart, chatbubblesOutline } from 'ionicons/icons';
+import {Route, Link } from 'react-router-dom';
+import Articles from '../pages/view/viewRessources/VueRessourceTexte';
+import Video from '../pages/view/viewRessources/VueRessourceTexte';
 
 //CSS
 import './css/ressourceCard.css'
@@ -13,16 +16,26 @@ const RessourceCard: React.FC = () => {
           <IonAvatar>
             <img src="http://pm1.narvii.com/7158/c170e801266e77cea52ac68934ba6596647a7795r1-604-443v2_uhq.jpg" />
           </IonAvatar>
-          <span className="spanNameCard">Farid Noxus</span>
+          <Link to="/vue/ressource/texte">
+            <IonItem lines="none">
+              <span className="spanNameCard">Farid Noxus</span>
+            </IonItem>
+          </Link>
         </IonCardSubtitle>
-        <IonCardTitle className="colorPink positionTextTitleCard">Titre</IonCardTitle>
+        <Link to="/vue/ressource/article">
+          <IonItem lines="none">
+            <IonCardTitle className="colorPink positionTextTitleCard">Titre</IonCardTitle>
+          </IonItem>
+        </Link>
       </IonCardHeader>
 
       <IonCardContent id="ressourceCardId">
-        <IonImg className="" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_15.jpg"/>
-        <IonText color="white">
-          "Dans la vie, j'avais deux ennemis : le vocabulaire et les épinards."
-          </IonText>
+        <Link to="/vue/ressource/video">
+          <IonItem lines="none">
+            <IonImg className="" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_15.jpg" />
+          </IonItem>
+        </Link>
+        <IonText color="white">"Dans la vie, j'avais deux ennemis : le vocabulaire et les épinards."</IonText>
       </IonCardContent>
 
       <IonText className="footerCard">
@@ -37,6 +50,13 @@ const RessourceCard: React.FC = () => {
         </IonTitle>
       </IonText>
 
+      <IonRouterOutlet>
+        <Route path="/vue/2" component={Articles} />
+        <Route path="/vue/3" component={Video} />
+        {/* <Route path="/explore" component={Explorer} /> */}
+        {/* <Route path="/ajouter" component={Ajouter} /> */}
+        {/* <Route path="/tendances" component={Tendances} /> */}
+      </IonRouterOutlet>
     </IonCard>
   );
 };

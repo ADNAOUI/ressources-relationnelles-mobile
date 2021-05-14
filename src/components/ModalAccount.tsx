@@ -11,7 +11,6 @@ class ModalAccount extends React.Component {
         indexTabsConnect : 1 
     };
    
-
     headerRef: RefObject<HTMLIonHeaderElement> = React.createRef();
 
     async closeModal() {
@@ -22,7 +21,6 @@ class ModalAccount extends React.Component {
     await (this.headerRef.current.closest('ion-modal') as HTMLIonModalElement).dismiss();}
 
     
-
     render() {
         console.log(this.state.indexTabsConnect);
         return (
@@ -155,8 +153,6 @@ class ModalAccount extends React.Component {
 
 
                 </IonContent>
-
-               
             </IonPage>   
       );
     }; 

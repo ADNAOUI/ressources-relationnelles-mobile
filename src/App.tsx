@@ -8,7 +8,7 @@ import {
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
-  IonTabs, IonHeader, IonToolbar, IonButton, IonSearchbar, IonThumbnail, IonImg, IonModal
+  IonTabs, IonHeader, IonToolbar, IonSearchbar, IonThumbnail, IonImg, IonModal
 } from '@ionic/react';
 import { homeOutline, personCircleOutline, flame, addCircleOutline, compass} from 'ionicons/icons';
 
@@ -61,6 +61,10 @@ import GamesTendances from './components/childViewTendances/games';
 import VideosTendances from './components/childViewTendances/videos';
 import ArticlesTendances from './components/childViewTendances/articles';
 
+import Texte from './pages/view/viewRessources/VueRessourceTexte';
+import Article from './pages/view/viewRessources/VueRessourceArticle';
+import Video from './pages/view/viewRessources/VueRessourceVideo';
+
 /* CSS */
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
@@ -72,10 +76,8 @@ import './pages/css/variables.css';
 import Logo from './img/Logo_REsources_RElationnellesResponsive.png';
 import ModalAccount from './components/ModalAccount';
 
-
 export const App: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-  
   async function closeModal() {
     await setShowModal(false);
   }
@@ -84,24 +86,23 @@ export const App: React.FC = () => {
     <IonApp>
 
       <IonHeader>
-          <IonToolbar className="tailleToolBarApp">
-            <IonThumbnail slot="start">
-              <IonImg className="imageTailleApp" src={Logo}/>
+        <IonToolbar className="tailleToolBarApp">
+          <IonThumbnail slot="start">
+            <IonImg className="imageTailleApp" src={Logo}/>
 
-              <IonIcon onClick={() => setShowModal(true)} color="primary" className="positionIconAccountTopBar" icon={personCircleOutline}>
-                <IonModal isOpen={showModal} onDidDismiss={() => setShowModal(false)}>
-                  <ModalAccount></ModalAccount>
-                </IonModal>
-              </IonIcon>
+            <IonIcon onClick={() => setShowModal(true)} color="primary" className="positionIconAccountTopBar" icon={personCircleOutline}>
+              <IonModal isOpen={showModal} onDidDismiss={() => setShowModal(false)}>
+                <ModalAccount></ModalAccount>
+              </IonModal>
+            </IonIcon>
 
-            </IonThumbnail>
-            <IonSearchbar className="placementSearchBar"></IonSearchbar>
-          </IonToolbar>
-        </IonHeader>
+          </IonThumbnail>
+          <IonSearchbar className="placementSearchBar"></IonSearchbar>
+        </IonToolbar>
+      </IonHeader>
 
       <IonReactRouter>
         <IonTabs>
-
           <IonRouterOutlet>
             <Route path="/" render={() => <Redirect to="/accueil" />} exact={true} />
             <Route path="/accueil" component={Home} />
@@ -153,38 +154,43 @@ export const App: React.FC = () => {
             <Route path="/category/soi/videos" component={Videossoi} />
             <Route path="/category/soi/about" component={Aboutsoi} />
 
-             {/* Route pour la Page Tendances */}
+            {/* Route pour la Page Tendances */}
             <Route path="/tendances/nouveautes" component={NouveautesTendances} />
             <Route path="/tendances/moreliked" component={MoreLikedTendances} />
             <Route path="/tendances/games" component={GamesTendances} />
             <Route path="/tendances/videos" component={VideosTendances} />
             <Route path="/tendances/articles" component={ArticlesTendances} />
+             
+            {/* Route pour la Page afficher une Ressource */}
+            <Route path="/vue/ressource/texte" component={Texte} />
+            <Route path="/vue/ressource/article" component={Article} />
+            <Route path="/vue/ressource/video" component={Video} />
           </IonRouterOutlet>
 
-          <IonTabBar slot="bottom">
-            <IonTabButton tab="accueil" href="/accueil">
+          <IonTabBar className="positionTabs" slot="bottom">
+            <IonTabButton className="widthTabParent" tab="accueil" href="/accueil">
               <IonIcon icon={homeOutline} />
               <IonLabel>Accueil</IonLabel>
             </IonTabButton>
 
-            <IonTabButton tab="explore" href="/explore">
+            <IonTabButton className="widthTabParent" tab="explore" href="/explore">
               <IonIcon icon={compass} />
               <IonLabel>Explore</IonLabel>
             </IonTabButton>
 
-            <IonTabButton tab="ajouter" href="/ajouter">
+            <IonTabButton className="widthTabParent" tab="ajouter" href="/ajouter">
               <IonIcon className="sizeButtonAddRessources" icon={addCircleOutline} />
               <IonLabel></IonLabel>
             </IonTabButton>
 
-            <IonTabButton tab="tendances" href="/tendances/nouveautes">
+            <IonTabButton className="widthTabParent" tab="tendances" href="/tendances/nouveautes">
               <IonIcon icon={flame} />
-              <IonLabel>Tendances</IonLabel>
+              <IonLabel>Trends</IonLabel>
             </IonTabButton>
 
-            <IonTabButton tab="monCompte" href="/monCompte">
+            <IonTabButton className="widthTabParent" tab="monCompte" href="/monCompte">
               <IonIcon icon={personCircleOutline} />
-              <IonLabel>Mon Compte</IonLabel>
+              <IonLabel>Profil</IonLabel>
             </IonTabButton>
           </IonTabBar>
         </IonTabs>

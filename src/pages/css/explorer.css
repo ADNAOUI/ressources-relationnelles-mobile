@@ -9,3 +9,14 @@
 .boutonExplorer > a > ion-button {
     width: 100%;
 }
+.marginSection > .boutonExplorer > a > ion-button > ion-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.marginSection > .boutonExplorer > a > ion-button > ion-text > ion-icon{
+    font-size: 20px;
+    width: 30px;
+}
