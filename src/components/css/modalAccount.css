@@ -17,15 +17,13 @@ ion-content > .InscriptionModalText{
     text-align: center;
 }
 .positionParentListNavigationModal{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: 15px;
-    margin-top: 25px;
+    margin-left: 20% ;
 }
 .positionParentListNavigationModal > li{
     margin-left: 10px;
+}
+.inscriptionModalText{
+    text-align:center;
 }
 .inscriptionModalForm{
     padding-left: 20px;
@@ -58,8 +56,43 @@ ion-content > .InscriptionModalText{
 .connexionModalForm > .textPasswordForgotten {
     color : #E04980 ;
 }
+.passwordForgottenModalForm {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    
+}
+.passwordForgottenModalForm > ion-item{
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #705a62;
+}
+.passwordForgottenModalForm > .textProblemWithEmail {
+    color : #E04980 ;  
+}
+.ButtonBackModalPasswordForgotten{
+  width: 150px;
+  align-items: flex-end;
+  text-align: end;
+}
+.tellUsMoreAboutAccount {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+    width: 100%;
 
-
+}
+.imgModalWelcome{
+    margin-top: 10%;
+}
+.relativeParentPosition{
+    position: relative;
+}
+.childForm{
+    position : absolute ;
+    top: 50%; 
+    transform: translateY(-85%);  
+}
 
 /***************************************************
                     COULEUR
