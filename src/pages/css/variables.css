@@ -1,6 +1,8 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
-
+body{
+  font-family: Roboto;
+}
 :host{
   min-height: 30px;
 }
@@ -56,7 +58,7 @@ http://ionicframework.com/docs/theming/ */
 .positionIconAccountTopBar{
   position: absolute;
   top: 15px;
-  right: 5px;
+  right: 7px;
   font-size: 30px;
   padding: 0;
   margin: 0;
