@@ -16,6 +16,7 @@ export default class ApercuRessourceFav extends React.Component {
           <IonTitle>Aperçu de vos Ressources Favorites </IonTitle>
         </IonText>
 
+        <div className="md-layout backgroundProfilDark">
           <mobiscroll.FormGroup>
             <mobiscroll.ScrollView
               theme="ios"
@@ -31,6 +32,8 @@ export default class ApercuRessourceFav extends React.Component {
               }
             </mobiscroll.ScrollView>
           </mobiscroll.FormGroup>
+          </div>
+          
       </section>
     );
   }
