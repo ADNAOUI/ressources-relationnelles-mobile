@@ -12,6 +12,7 @@ const VueFavoriProfil: React.FC = () => {
       <RouteProfil />
       <section className="marginSection">
        <h3>RESSOURCES FAVORITES</h3>
+       
           {
             Array(20).fill(null).map((_, i) => (
               <div>
