@@ -88,12 +88,10 @@ body{
 
 /** Ionic CSS Variables **/
 :root {
-  --ion-background-color: transparent;
-  
   /** primary **/
   --ion-color-primary: #E04980;
   --ion-color-primary-rgb: 82, 255, 252;
-  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast: #000000;
   --ion-color-primary-contrast-rgb: 0, 0, 0;
   --ion-color-primary-shade: #48e0de;
   --ion-color-primary-tint: #63fffc;
