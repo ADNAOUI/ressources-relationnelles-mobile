@@ -1,9 +1,8 @@
 import React from 'react';
-import { IonItem, IonRouterOutlet, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonItem, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
 import { heart, chatbubblesOutline } from 'ionicons/icons';
-import {Route, Link } from 'react-router-dom';
-import Articles from '../pages/view/viewRessources/VueRessourceTexte';
-import Video from '../pages/view/viewRessources/VueRessourceTexte';
+import {Link } from 'react-router-dom';
+
 
 //CSS
 import './css/ressourceCard.css'

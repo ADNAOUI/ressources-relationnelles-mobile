@@ -16,7 +16,7 @@ export default class ApercuRessource extends React.Component {
           <IonTitle>Aperçu de vos Ressources </IonTitle>
         </IonText>
 
-        <div className="md-layout">
+        <div className="md-layout backgroundProfilDark">
           <mobiscroll.FormGroup>
             <mobiscroll.ScrollView
               theme="ios"

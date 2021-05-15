@@ -9,7 +9,7 @@ export default class RouteProfil extends React.Component {
 
     render() {
         return (
-            <section className="categorySectionprofil">
+            <section>
                 <nav className="navBarProfil">
                     <ul className="positionParentListNavigationProfil">
                         <Link to="/profil">

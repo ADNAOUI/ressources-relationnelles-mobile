@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useIonViewWillEnter, IonInfiniteScroll, IonContent, IonInfiniteScrollContent, IonPage } from '@ionic/react';
+import React from 'react';
+import { IonContent, IonPage } from '@ionic/react';
 
 //Vue 
 import Card from '../components/RessourceCard';
