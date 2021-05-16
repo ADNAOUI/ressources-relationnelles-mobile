@@ -255,3 +255,23 @@
     border: 1px solid #304750 ;
     font-size: 34px;
 }
+/******************************************************
+                Couleurs
+********************************************************/
+:root {
+    --ion-color-noxus: #00B0F0;
+    --ion-color-noxus-rgb: 0,176,240;
+    --ion-color-noxus-contrast: #000000;
+    --ion-color-noxus-contrast-rgb: 0,0,0;
+    --ion-color-noxus-shade: #009bd3;
+    --ion-color-noxus-tint: #1ab8f2;
+  }
+  
+  .ion-color-noxus {
+    --ion-color-base: var(--ion-color-noxus);
+    --ion-color-base-rgb: var(--ion-color-noxus-rgb);
+    --ion-color-contrast: var(--ion-color-noxus-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-noxus-contrast-rgb);
+    --ion-color-shade: var(--ion-color-noxus-shade);
+    --ion-color-tint: var(--ion-color-noxus-tint);
+  }
