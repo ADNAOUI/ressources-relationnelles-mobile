@@ -95,11 +95,3 @@ export const Explorer: React.FC = () => {
   );
 };
 export default Explorer;
-
-        {/* <div className="boutonExplorer">
-        <IonButton color="danger" routerLink="/accueil">Soi</IonButton>
-        <IonButton color="tertiary" routerLink="/explore">Conjoints</IonButton>
-        <IonButton color="success" routerLink="/monCompte">Professionnelles</IonButton>
-        <IonButton color="primary" routerLink="/ajouter">Famille</IonButton>
-        <IonButton color="warning" routerLink="/tendances">Amis</IonButton>
-        </div> */}
