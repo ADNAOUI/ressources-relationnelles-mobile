@@ -1,8 +1,9 @@
 import React from 'react';
-import { IonItem, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonItem, IonRouterOutlet, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
 import { heart, chatbubblesOutline } from 'ionicons/icons';
-import {Link } from 'react-router-dom';
-
+import {Route, Link } from 'react-router-dom';
+import Articles from '../pages/view/viewRessources/VueRessourceTexte';
+import Video from '../pages/view/viewRessources/VueRessourceTexte';
 
 //CSS
 import './css/ressourceCard.css'
@@ -10,7 +11,6 @@ import './css/ressourceCard.css'
 const RessourceCard: React.FC = () => {
   return (
     <IonCard className="formatCard">
-       <Link to="/vue/ressource/texte">
       <IonCardHeader>
         <IonCardSubtitle className="colorBlue positionAvatarHome">
           <IonAvatar>
@@ -18,34 +18,24 @@ const RessourceCard: React.FC = () => {
           </IonAvatar>
           
             <IonItem lines="none">
-              <span className="spanNameCard">Jennifer BAYAUX</span>
+              <span className="spanNameCard">Jonathan FERNANDEZ</span>
             </IonItem>
           
         </IonCardSubtitle>
-        
+        <Link to="/vue/ressource/article">
           <IonItem lines="none">
-            <IonCardTitle className="colorPink positionTextTitleCard">Faciliter les relations</IonCardTitle>
+            <IonCardTitle className="colorPink positionTextTitleCard">Qu'en pensez vous ? </IonCardTitle>
           </IonItem>
-        
+        </Link>
       </IonCardHeader>
 
       <IonCardContent id="ressourceCardId">
         
-         
+          <IonItem lines="none">
+            <IonImg className="" src="https://t3.ftcdn.net/jpg/01/72/13/68/360_F_172136874_7syVURiLEyHFMcon8166r4wt7CHohN7f.jpg" />
+          </IonItem>
         
-        <IonText color="white">(Dagonnet): A quoi ça sert de se pointer là-bas? Quel intérêt?
-
-                                Loth: La surprise, Seigneur Dagonnet. Une discipline pour laquelle vous n’avez aucun talent.
-
-                                (Dagonnet): C’est-à-dire?
-
-                                Loth: Vous êtes toujours désespérément là où l’on vous attend. Par exemple, tout le royaume pense que vous êtes un con.
-
-                                (Dagonnet): Oui
-
-                                Loth: Et quand vous ouvrez la bouche, vous ne faites que confirmer que vous en êtes un. Vous n’avez pas le sens du coup de théâtre.
-
-</IonText>
+        <IonText color="white">Exprimez vous en commentaires </IonText>
       </IonCardContent>
 
       <IonText className="footerCard">
@@ -59,7 +49,6 @@ const RessourceCard: React.FC = () => {
           <IonLabel>120</IonLabel>
         </IonTitle>
       </IonText>
-      </Link>
     </IonCard>
   );
 };

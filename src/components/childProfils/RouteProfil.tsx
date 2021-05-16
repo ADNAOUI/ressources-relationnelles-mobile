@@ -14,12 +14,12 @@ export default class RouteProfil extends React.Component {
                     <ul className="positionParentListNavigationProfil">
                         <Link to="/profil">
                             <li>
-                            <IonText>Home</IonText>
+                            <IonText>Profil</IonText>
                             </li>
                         </Link>
                         <Link to="/view/gallerieProfil">
                             <li> 
-                            <IonText>Gallerie</IonText>
+                            <IonText>Galerie</IonText>
                             </li>
                         </Link>
                         <Link to="/view/apercuRessourceProfil">
@@ -29,7 +29,7 @@ export default class RouteProfil extends React.Component {
                         </Link>
                         <Link to="/view/apercuRessourceFavProfil">
                             <li>
-                            <IonText>Favori</IonText>
+                            <IonText>Favoris</IonText>
                             </li>
                         </Link>
                         <Link to="/view/aboutProfil">

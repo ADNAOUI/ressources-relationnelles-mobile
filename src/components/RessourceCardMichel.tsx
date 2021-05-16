@@ -1,7 +1,7 @@
 import React from 'react';
-import { IonItem, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonItem, IonRouterOutlet, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard,  IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
 import { heart, chatbubblesOutline } from 'ionicons/icons';
-import {Link } from 'react-router-dom';
+import {Route, Link } from 'react-router-dom';
 
 
 //CSS
@@ -10,7 +10,7 @@ import './css/ressourceCard.css'
 const RessourceCard: React.FC = () => {
   return (
     <IonCard className="formatCard">
-       <Link to="/vue/ressource/texte">
+      <Link to="/vue/ressource/video">
       <IonCardHeader>
         <IonCardSubtitle className="colorBlue positionAvatarHome">
           <IonAvatar>
@@ -18,34 +18,26 @@ const RessourceCard: React.FC = () => {
           </IonAvatar>
           
             <IonItem lines="none">
-              <span className="spanNameCard">Jennifer BAYAUX</span>
+              <span className="spanNameCard">Michel PARSETTI</span>
             </IonItem>
           
         </IonCardSubtitle>
         
           <IonItem lines="none">
-            <IonCardTitle className="colorPink positionTextTitleCard">Faciliter les relations</IonCardTitle>
+            <IonCardTitle className="colorPink positionTextTitleCard">Une vidéo pour les gouverner tous </IonCardTitle>
           </IonItem>
-        
+       
       </IonCardHeader>
 
       <IonCardContent id="ressourceCardId">
         
-         
+          <IonItem lines="none">
+            <IonImg className="" src="https://transformationdigitale.coach/wp-content/uploads/2018/12/D%C3%A9veloppement-personnel.jpg" />
+          </IonItem>
         
-        <IonText color="white">(Dagonnet): A quoi ça sert de se pointer là-bas? Quel intérêt?
-
-                                Loth: La surprise, Seigneur Dagonnet. Une discipline pour laquelle vous n’avez aucun talent.
-
-                                (Dagonnet): C’est-à-dire?
-
-                                Loth: Vous êtes toujours désespérément là où l’on vous attend. Par exemple, tout le royaume pense que vous êtes un con.
-
-                                (Dagonnet): Oui
-
-                                Loth: Et quand vous ouvrez la bouche, vous ne faites que confirmer que vous en êtes un. Vous n’avez pas le sens du coup de théâtre.
-
-</IonText>
+        
+        <IonText color="white">Vidéo de developpement personel</IonText>
+        
       </IonCardContent>
 
       <IonText className="footerCard">

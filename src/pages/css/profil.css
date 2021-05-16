@@ -142,6 +142,119 @@
     margin: 0 10px;
 }
 
+
+/******************************************************
+                Vue Ressources Profils
+********************************************************/
+.marginSection > h3 {
+    color : #50A7C7 ;
+    text-align : center ;
+}
+.opacityCard{
+    opacity: 50%;
+}
+.RessourceCardContainer{
+    margin-top: 10% ;
+}
+.waitingText {
+    text-align: right;
+    margin-right: 4% ;
+    opacity: 20%;
+}
+.waitingText > ion-icon {
+    color:yellow;
+}
+.waitingText > ion-text {
+    color:yellow;
+}
+
+.validateText {
+    text-align: right;
+    margin-right: 4% ;
+}
+.validateText > ion-icon {
+    color:#49E058;
+}
+.validateText > ion-text {
+    color:#49E058;
+}
+.subtitlesCard{
+    display: flex;
+    flex-direction: row ;
+    position:relative;
+}
+.editText {
+    position:absolute;
+    right :0%;
+    margin-right: 4% ;
+}
+.editText > ion-icon {
+    color: #49E06A
+}
+.editText > ion-text {
+    color: #49E06A
+}
+.deleteText {
+    position:absolute;
+    left :5%;   
+    
+}
+
+.deleteText > ion-icon {
+    color: #FF0000 ;
+}
+.deleteText > ion-text {
+    color: #FF0000 ;
+}
+
+
+/******************************************************
+                Vue Ressources Favorites Profils
+********************************************************/
+
+.favoriteIcon{
+    text-align: right;
+    margin-right: 5% ; 
+}
+
+.favoriteIcon > ion-icon {
+    color: rgb(170, 108, 14) ;
+}
+
+/******************************************************
+                Vue a propos Profils
+********************************************************/
+
+.topAboutProfil {
+    text-align:center;
+}
+.aboutProfil {
+    color: #304750 ;
+    text-align:center;  
+}
+.clearContent {
+    padding: 10px;
+    border-top: 1px solid #304750;
+    margin-left : 3% ;
+    margin-right : 3% ;
+}
+.logoAboutProfil {
+    color: #304750 ;
+    font-size: 50px;
+    align-items: center;
+    
+}
+.CommentsAboutProfil {
+    margin : 2% ;
+}
+.iconStats {
+    align-items: center;
+    text-align: center;
+    margin : 3%;
+    width: 60%;
+    border: 1px solid #304750 ;
+    font-size: 34px;
+}
 /******************************************************
                 Couleurs
 ********************************************************/
