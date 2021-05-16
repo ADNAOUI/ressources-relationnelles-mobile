@@ -21,10 +21,10 @@ export default class AboutProfil extends React.Component {
     return (
       <section className="sectionEnfantProfil">
         <IonText>
-          <IonTitle>A propos de </IonTitle>
+          <IonTitle>A propos de <IonText color="noxus">Farid Noxus</IonText></IonTitle>
         </IonText>
 
-        <IonCard id="firstCardAboutProfilBiographie">
+        <IonCard className="backgroundProfilDark" id="firstCardAboutProfilBiographie">
           <section className="firstParentSection">
             <IonCardSubtitle>Mes Informations</IonCardSubtitle>
             <IonCardContent className="positionParentElementCardAboutProfil">

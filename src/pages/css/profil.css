@@ -4,7 +4,52 @@
 .sectionEnfantProfil{
     margin-top: 50px;
 }
+.backgroundProfilDark{
+    background: linear-gradient(162deg, #00222e8a 0%, #00151d24 76%, #00151d24 100%);
+    padding-bottom: 10px;
+    padding-top: 1px;
+}
+.sectionEnfantProfil > ion-text > ion-title {
+    margin: 6px;
+}
 
+/******************************************************
+                Routes Profils
+********************************************************/
+.backgroundTopProfil{
+    background: center / contain no-repeat url(https://www.runeterrafire.com/images/decks/top/noxus.jpg);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 0;
+    padding: 15px;
+}
+.positionParentAvatarProfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+    .positionEnfantAvatarProfil{
+        position: relative;
+        left: 15px;
+    }
+
+.parentItemsTopProfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+    .parentItemsTopProfil > ion-text {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+    }
 
 /******************************************************
                 Routes Profils
@@ -38,6 +83,9 @@
 /******************************************************
                 About Profils
 ********************************************************/
+#firstCardAboutProfilBiographie{
+    border-radius: 10px;
+}
 #firstCardAboutProfilBiographie > section > ion-card-subtitle {
     text-transform: uppercase;
     margin: 15px 15px 0 15px;
@@ -83,37 +131,11 @@
 /******************************************************
                 Images Profils
 ********************************************************/
-.bck-orange {
-    background: #ff9800;
-}
-
-.bck-red {
-    background: #f4511e;
-}
-
-.bck-green {
-    background: #afb42b;
-}
-
-.bck-yellow {
-    background: #ffc400;
-}
-
-.bck-blue {
-    background: #64b5f6;
-}
-
-.bck-pink {
-    background: #f48fb1;
-}
-
 .md-layout .mbsc-scv-item {
     color: #fff;
     font-weight: bold;
     text-align: center;
 }
-
-
 
 .md-fixed .mbsc-scv-item {
     height: 80px;

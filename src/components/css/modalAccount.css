@@ -57,10 +57,7 @@ ion-content > .InscriptionModalText{
     color : #E04980 ;
 }
 .passwordForgottenModalForm {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 2px;
-    
+    padding: 20px;
 }
 .passwordForgottenModalForm > ion-item{
     border-radius: 10px;
@@ -69,6 +66,9 @@ ion-content > .InscriptionModalText{
 }
 .passwordForgottenModalForm > .textProblemWithEmail {
     color : #E04980 ;  
+}
+.whatULikeModalForm > .childForm {
+    padding: 20px;
 }
 .ButtonBackModalPasswordForgotten{
   width: 150px;
