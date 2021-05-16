@@ -1,5 +1,5 @@
 import React, { RefObject } from 'react';
-import { IonText, IonItem, IonInput, IonLabel, IonHeader, IonToolbar, IonTitle, IonIcon, IonButtons, IonButton, IonContent, IonPage, IonImg } from '@ionic/react';
+import { IonText, IonItem, IonInput, IonLabel, IonIcon, IonButtons, IonButton, IonContent, IonPage, IonImg } from '@ionic/react';
 
 /*CSS*/
 import './css/modalAccount.css'
@@ -23,9 +23,7 @@ class ModalAccount extends React.Component {
 
 
     render() {
-        console.log(this.state.indexTabsConnect);
         return (
-
             <IonPage color="secondary">
                 <section ref={this.headerRef} >
                     <IonButtons className="positionCloseCrossModalInscription" slot="end">

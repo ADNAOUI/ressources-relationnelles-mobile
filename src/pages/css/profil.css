@@ -228,32 +228,48 @@
 .topAboutProfil {
     text-align:center;
 }
+.positionAvatarVueAboutProfil{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
 .aboutProfil {
     color: #304750 ;
     text-align:center;  
 }
+
 .clearContent {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     border-top: 1px solid #304750;
-    margin-left : 3% ;
-    margin-right : 3% ;
 }
+    .clearContent > ion-item {
+        display: block;
+        margin: auto;
+    }
+    .clearContent > ion-text {
+        text-align: justify;
+        padding: 5px;
+    }
+
 .logoAboutProfil {
     color: #304750 ;
-    font-size: 50px;
-    align-items: center;
-    
+    font-size: 50px;    
 }
 .CommentsAboutProfil {
     margin : 2% ;
 }
 .iconStats {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin : 3%;
-    width: 60%;
-    border: 1px solid #304750 ;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #304750;
     font-size: 34px;
+    text-align: center;
 }
 /******************************************************
                 Couleurs

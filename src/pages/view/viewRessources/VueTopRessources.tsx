@@ -8,7 +8,7 @@ export default class VueTopRessources extends React.Component {
         <form id="vueTopRessourceParentText">
             <IonItem lines="none">
                 <IonText>Auteur : &nbsp;</IonText>
-                <IonText className="colorPink">Aurélien Pitaut</IonText>
+                <IonText className="colorPink">Farid Noxus</IonText>
             </IonItem>
 
             <IonItem lines="none">

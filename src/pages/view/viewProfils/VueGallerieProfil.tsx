@@ -3,13 +3,17 @@ import { IonContent,  IonPage,IonImg } from '@ionic/react';
 import mobiscroll from '@mobiscroll/react';
 import '@mobiscroll/react/dist/css/mobiscroll.min.css';
 
-import Card from '../../../components/RessourceCard';
+//Component
+import TopProfil from '../../../components/childProfils/TopProfil'
 import RouteProfil from '../../../components/childProfils/RouteProfil';
+import Card from '../../../components/RessourceCard';
+
 
 const VueGallerieProfil: React.FC = () => {
   return (
     <IonPage>
       <IonContent>
+        <TopProfil/>
         <RouteProfil />
         <section className="marginSection">          
           <h3 className="aboutProfil" >GALERIE D'IMAGES </h3>

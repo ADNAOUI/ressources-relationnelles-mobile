@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 
-//Vue 
+//Component
 import Card from '../components/RessourceCard';
 import CardMichel from '../components/RessourceCardMichel';
 import CardJonathan from '../components/RessourceCardJonathan';
@@ -16,16 +16,30 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent>
         <section className="marginSection">
-          {
-            Array(100).fill(null).map((_, i) => (
-              <div>
-                    
-                    <CardMichel key={i} />
-                    <CardJonathan key={i} />
-                    <Card key={i} />
-              </div>
-              
+          <Card />
+          <CardJonathan />
+          <CardMichel />
 
+          {
+            Array(5).fill(null).map((_, i) => (
+              <div>                            
+                <CardJonathan key={i} />
+
+              </div>
+            ))
+          }
+          {
+            Array(5).fill(null).map((_, i) => (
+              <div>                            
+                <CardMichel key={i} />
+              </div>
+            ))
+          }
+          {
+            Array(5).fill(null).map((_, i) => (
+              <div>   
+                <Card key={i} />         
+              </div>
             ))
           }
         </section>
