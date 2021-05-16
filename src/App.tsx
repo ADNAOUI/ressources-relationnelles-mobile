@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Redirect, Route } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import { IonReactRouter } from '@ionic/react-router';
 import {
   IonApp,
@@ -98,7 +98,6 @@ export const App: React.FC = () => {
         <IonToolbar className="tailleToolBarApp">
           <IonThumbnail slot="start">
             <IonImg className="imageTailleApp" src={Logo}/>
-
             <IonIcon onClick={() => setShowModal(true)} color="primary" className="positionIconAccountTopBar" icon={personCircleOutline}>
               <IonModal isOpen={showModal} onDidDismiss={() => setShowModal(false)}>
                 <ModalAccount></ModalAccount>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonItem, IonTitle, IonLabel, IonIcon, IonText, IonAvatar, IonCard, IonCardSubtitle, IonImg, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonItem, IonLabel, IonText, IonAvatar, IonCardSubtitle } from '@ionic/react';
 
 /*CSS*/
 

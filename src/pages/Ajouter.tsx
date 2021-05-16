@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonTextarea, IonItemDivider, IonList, IonChip, IonText, IonItem, IonInput, IonLabel, IonHeader, IonToolbar, IonTitle, IonIcon, IonButtons, IonButton, IonContent, IonPage, IonImg } from '@ionic/react';
+import { IonTextarea, IonItemDivider, IonList, IonChip, IonText, IonItem, IonInput, IonLabel, IonHeader, IonToolbar, IonTitle, IonButton, IonContent, IonPage } from '@ionic/react';
 import { Link } from 'react-router-dom';
 
 import './css/ajouter.css';

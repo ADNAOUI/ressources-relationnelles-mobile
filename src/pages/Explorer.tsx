@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { IonButton, IonContent, IonIcon, IonLabel, IonPage, IonText} from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonIcon, IonLabel, IonPage, IonText, IonTitle, IonToolbar} from '@ionic/react';
 import { manOutline, briefcaseOutline, peopleOutline, heartHalfOutline, wineOutline} from 'ionicons/icons';
 
+//Component
+import Card from '../components/RessourceCard';
+import CardMichel from '../components/RessourceCardMichel';
+import CardJonathan from '../components/RessourceCardJonathan';
 
+//CSS
 import './css/explorer.css';
 
 export const Explorer: React.FC = () => {
@@ -54,6 +59,37 @@ export const Explorer: React.FC = () => {
             </Link>
           </div>
         </section> 
+        <section className="marginSection">
+          <IonHeader>
+            <IonToolbar>
+              <IonTitle>Ressources les plus vues</IonTitle>
+            </IonToolbar>
+          </IonHeader>
+          <Card />
+          <CardMichel />
+          <CardJonathan />
+          {
+            Array(3).fill(null).map((_, i) => (
+              <div>                            
+                <Card key={i} />
+              </div>
+            ))
+          }
+          {
+            Array(3).fill(null).map((_, i) => (
+              <div>                            
+                <CardMichel key={i} />
+              </div>
+            ))
+          }
+          {
+            Array(3).fill(null).map((_, i) => (
+              <div>                            
+                <CardJonathan key={i} />
+              </div>
+            ))
+          }
+        </section>
       </IonContent>
     </IonPage>
   );

@@ -9,7 +9,6 @@ import '../../pages/css/profil.css'
 export default class ImageProfil extends React.Component {
 
   render() {
-    console.log(this.state)
     return (
       <section className="sectionEnfantProfil">
         <IonText>
