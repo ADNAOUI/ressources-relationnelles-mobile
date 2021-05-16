@@ -3,6 +3,8 @@ import { useIonViewWillEnter, IonInfiniteScroll, IonContent, IonInfiniteScrollCo
 
 //Vue 
 import Card from '../components/RessourceCard';
+import CardMichel from '../components/RessourceCardMichel';
+import CardJonathan from '../components/RessourceCardJonathan';
 
 //CSS
 import './css/home.css';
@@ -16,7 +18,14 @@ const Home: React.FC = () => {
         <section className="marginSection">
           {
             Array(100).fill(null).map((_, i) => (
-              <Card key={i} />
+              <div>
+                    
+                    <CardMichel key={i} />
+                    <CardJonathan key={i} />
+                    <Card key={i} />
+              </div>
+              
+
             ))
           }
         </section>
